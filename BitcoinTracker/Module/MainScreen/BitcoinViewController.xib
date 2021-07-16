@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BitcoinViewController" customModule="BitcoinTracker" customModuleProvider="target">
+            <connections>
+                <outlet property="pickerView" destination="hiE-e6-BjZ" id="4sA-iX-iQ9"/>
+                <outlet property="priceLabel" destination="zX9-bd-4Gh" id="HKT-bB-TfR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiE-e6-BjZ">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pickerView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Pnb-yD-FHH">
+                    <rect key="frame" x="132.5" y="20" width="110" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="0Q1-7J-3KY"/>
+                        <constraint firstAttribute="width" constant="110" id="ZVg-uP-Qqi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zX9-bd-4Gh">
+                    <rect key="frame" x="139.5" y="205" width="96.5" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" red="0.90918177369999997" green="0.68757462499999999" blue="0.24922221899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.24314308170000001" green="0.58574408290000002" blue="0.59437328580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hiE-e6-BjZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="6rz-VG-4Lk"/>
+                <constraint firstItem="Pnb-yD-FHH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ecf-8B-0w3"/>
+                <constraint firstItem="hiE-e6-BjZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RKy-bn-v7w"/>
+                <constraint firstItem="zX9-bd-4Gh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UFo-tM-MPJ"/>
+                <constraint firstItem="Pnb-yD-FHH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Vgd-gO-jxh"/>
+                <constraint firstItem="hiE-e6-BjZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sFU-ME-JBS"/>
+                <constraint firstItem="zX9-bd-4Gh" firstAttribute="top" secondItem="Pnb-yD-FHH" secondAttribute="bottom" constant="75" id="z6M-oC-yyZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-26.399999999999999" y="91.304347826086968"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="82" height="88"/>
+    </resources>
+</document>
